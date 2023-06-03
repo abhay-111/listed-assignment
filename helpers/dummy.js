@@ -1,85 +1,97 @@
-export const data ={
-    userStats : [
-      {
-        iconUrl:
-          "https://res.cloudinary.com/dqzjevzuo/image/upload/v1685772357/dzf9eded4n1fbvkyxgcx.png",
-        statName: "Total Revenues",
-        statValue: "$2,129,430",
-        bgColor: "bg-[#DDEFE0]",
-        dimensions:'h-[24px] w-[26px]'
+export const data = {
+  userStats: [
+    {
+      iconUrl:
+        "https://res.cloudinary.com/dqzjevzuo/image/upload/v1685772357/dzf9eded4n1fbvkyxgcx.png",
+      statName: "Total Revenues",
+      statValue: "$2,129,430",
+      bgColor: "#DDEFE0",
+      dimensions:{
+        height:24,
+        width:26,
+      } 
+    },
+    {
+      iconUrl:
+        "https://res.cloudinary.com/dqzjevzuo/image/upload/v1685772357/qsjo2lvu6duko0kwyhn1.png",
+      statName: "Total Transactions",
+      statValue: "1,520",
+      bgColor: "#F4ECDD",
+      dimensions: {
+        height:24,
+        width:20,
+      }
+    },
+    {
+      iconUrl:
+        "https://res.cloudinary.com/dqzjevzuo/image/upload/v1685772357/vtyiizsirmhvsjikjiss.png",
+      statName: "Total Likes",
+      statValue: "9,721",
+      bgColor: "#EFDADA",
+      dimensions:{
+        width:24,
+        height:24
       },
-      {
-        iconUrl:
-          "https://res.cloudinary.com/dqzjevzuo/image/upload/v1685772357/qsjo2lvu6duko0kwyhn1.png",
-        statName: "Total Transactions",
-        statValue: "1,520",
-        bgColor: "bg-[#F4ECDD]",
-        dimensions:'h-[24px] w-[20px]'
+    },
+    {
+      iconUrl:
+        "https://res.cloudinary.com/dqzjevzuo/image/upload/v1685772357/gaxvkedl59p1vczjhuhw.png",
+      statName: "Total Users",
+      statValue: "892",
+      bgColor: "#DEE0EF",
+      dimensions:{
+        height:24,
+        width:36
       },
-      {
-        iconUrl:
-          "https://res.cloudinary.com/dqzjevzuo/image/upload/v1685772357/vtyiizsirmhvsjikjiss.png",
-        statName: "Total Likes",
-        statValue: "9,721",
-        bgColor: "bg-[#EFDADA]",
-        dimensions:'w-[24px] h-[24px]'
-      },
-      {
-        iconUrl:
-          "https://res.cloudinary.com/dqzjevzuo/image/upload/v1685772357/gaxvkedl59p1vczjhuhw.png",
-        statName: "Total Users",
-        statValue: "892",
-        bgColor: "bg-[#DEE0EF]",
-        dimensions:'h-[24px] w-[36px]'
-      },
-    ],
-     eventData : [
+    },
+  ],
+  eventData: [
     {
       title: "Meeting with suppliers from Kuta Bali",
       time: "14.00-15.00",
       description: "at Sunset Road, Kuta, Bali ",
-      color: "border-[#9BDD7C]",
+      color: "#9BDD7C",
     },
     {
       title: "Check operation at Giga Factory 1",
       time: "18.00-20.00",
       description: "at Central Jakarta ",
-      color: "border-[#6972C3]",
+      color: "#6972C3",
     },
   ],
-   navItems : [
-      {
-        text: "Dashboard",
-        iconUrl:
-          "https://res.cloudinary.com/dqzjevzuo/image/upload/v1685698423/w73wd1q8tvrhs3lpwssm.svg",
-        isActive: true,
-      },
-      {
-        text: "Transactions",
-        iconUrl:
-          "https://res.cloudinary.com/dqzjevzuo/image/upload/v1685698423/tbwjjumljilravljxfkh.svg",
-        isActive: false,
-      },
-      {
-        text: "Schedules",
-        iconUrl:
-          "https://res.cloudinary.com/dqzjevzuo/image/upload/v1685698423/h6wapge5qupf2esyrfof.svg",
-        isActive: false,
-      },
-      {
-        text: "Users",
-        iconUrl:
-          "https://res.cloudinary.com/dqzjevzuo/image/upload/v1685702125/kuoexqtgy9qzdxx2srn5.svg",
-        isActive: false,
-      },
-      {
-        text: "Settings",
-        iconUrl:
-          "https://res.cloudinary.com/dqzjevzuo/image/upload/v1685698423/ok1tszk4ypxgi3c1ygd9.svg",
-        isActive: false,
-      },
-    ],
-   lineChartData :[
+  navItems: [
+    {
+      text: "Dashboard",
+      iconUrl:
+        "https://res.cloudinary.com/dqzjevzuo/image/upload/v1685698423/w73wd1q8tvrhs3lpwssm.svg",
+      isActive: true,
+    },
+    {
+      text: "Transactions",
+      iconUrl:
+        "https://res.cloudinary.com/dqzjevzuo/image/upload/v1685698423/tbwjjumljilravljxfkh.svg",
+      isActive: false,
+    },
+    {
+      text: "Schedules",
+      iconUrl:
+        "https://res.cloudinary.com/dqzjevzuo/image/upload/v1685698423/h6wapge5qupf2esyrfof.svg",
+      isActive: false,
+    },
+    {
+      text: "Users",
+      iconUrl:
+        "https://res.cloudinary.com/dqzjevzuo/image/upload/v1685702125/kuoexqtgy9qzdxx2srn5.svg",
+      isActive: false,
+    },
+    {
+      text: "Settings",
+      iconUrl:
+        "https://res.cloudinary.com/dqzjevzuo/image/upload/v1685698423/ok1tszk4ypxgi3c1ygd9.svg",
+      isActive: false,
+    },
+  ],
+  lineChartData: [
     {
       name: "",
       uv: 4000,
@@ -117,21 +129,21 @@ export const data ={
       amt: 2181,
     },
   ],
-   pieChartData : [
-  {
-    name: "Group A",
-    value: 400,
-    fill: "#98D89E",
-  },
-  {
-    name: "Group B",
-    value: 300,
-    fill: "#EE8484",
-  },
-  {
-    name: "Group C",
-    value: 500,
-    fill: "#F6DC7D",
-  },
-]
-}
+  pieChartData: [
+    {
+      name: "Group A",
+      value: 400,
+      fill: "#98D89E",
+    },
+    {
+      name: "Group B",
+      value: 300,
+      fill: "#EE8484",
+    },
+    {
+      name: "Group C",
+      value: 500,
+      fill: "#F6DC7D",
+    },
+  ],
+};

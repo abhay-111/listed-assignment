@@ -3,11 +3,13 @@ import React from 'react'
 export const StatisticsCard = ({bgColor,iconUrl,statName,statValue, dimensions}) => {
   return (
     <div
-      className={`h-[120px]  min-w-[221px] p-[20px_25px] rounded-[20px] flex flex-col ${bgColor}`}
+      className={`h-[120px]  min-w-[221px] p-[20px_25px] rounded-[20px] flex flex-col`}
+      style={{backgroundColor:bgColor}}
     >
       <img
         src={iconUrl}
-        className={"object-contain self-end " + dimensions}
+        className={"object-contain self-end "}
+        style={{height:dimensions.height, width:dimensions.width}}
         alt=""
       />
       <div className="flex flex-col gap-[5px]">
