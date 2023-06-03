@@ -1,38 +1,7 @@
 import { NavListItems } from "../ui/NavListItems";
-
+import { data } from "../../helpers/dummy";
 export const SideDrawer = () => {
-    const navItems = [
-      {
-        text: "Dashboard",
-        iconUrl:
-          "https://res.cloudinary.com/dqzjevzuo/image/upload/v1685698423/w73wd1q8tvrhs3lpwssm.svg",
-        isActive: true,
-      },
-      {
-        text: "Transactions",
-        iconUrl:
-          "https://res.cloudinary.com/dqzjevzuo/image/upload/v1685698423/tbwjjumljilravljxfkh.svg",
-        isActive: false,
-      },
-      {
-        text: "Schedules",
-        iconUrl:
-          "https://res.cloudinary.com/dqzjevzuo/image/upload/v1685698423/h6wapge5qupf2esyrfof.svg",
-        isActive: false,
-      },
-      {
-        text: "Users",
-        iconUrl:
-          "https://res.cloudinary.com/dqzjevzuo/image/upload/v1685702125/kuoexqtgy9qzdxx2srn5.svg",
-        isActive: false,
-      },
-      {
-        text: "Settings",
-        iconUrl:
-          "https://res.cloudinary.com/dqzjevzuo/image/upload/v1685698423/ok1tszk4ypxgi3c1ygd9.svg",
-        isActive: false,
-      },
-    ];
+    
   return (
     <section className="h-full  min-w-[280px] flex flex-col justify-between bg-black rounded-[30px] py-[60px] pl-[50px]">
       <div className="h-full w-full flex flex-col gap-[60px]">
@@ -41,7 +10,7 @@ export const SideDrawer = () => {
         </p>
 
         <ul className="flex flex-col gap-[40px]">
-          {navItems.map((item) => {
+          {data.navItems.map((item) => {
             return (
               <NavListItems
                 text={item.text}

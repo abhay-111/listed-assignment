@@ -2,58 +2,17 @@
 import React from "react";
 import {
   LineChart,
-  CartesianGrid,
   XAxis,
   YAxis,
-  Legend,
   Line,
-  Tooltip,
   ReferenceLine,
-  CartesianAxis,
   ResponsiveContainer,
 } from "recharts";
+import { data } from "../../../helpers/dummy";
 export default function UserLineChart() {
-  const data = [
-    {
-      name: "",
-      uv: 4000,
-      pv: 2400,
-      amt: 2400,
-    },
-    {
-      name: "Week 1",
-      uv: 3000,
-      pv: 1398,
-      amt: 2210,
-    },
-    {
-      name: "Week 2",
-      uv: 2000,
-      pv: 9800,
-      amt: 2290,
-    },
-    {
-      name: "Week 3",
-      uv: 2780,
-      pv: 3908,
-      amt: 2000,
-    },
-    {
-      name: "Week 4",
-      uv: 1890,
-      pv: 4800,
-      amt: 2181,
-    },
-    {
-      name: "",
-      uv: 1890,
-      pv: 4800,
-      amt: 2181,
-    },
-  ];
   return (
     <ResponsiveContainer width="100%" height={212}>
-      <LineChart width={1000} height={250} data={data}>
+      <LineChart width={1000} height={250} data={data.lineChartData}>
         <XAxis
           interval={"preserveStartEnd"}
           axisLine={false}
@@ -67,7 +26,7 @@ export default function UserLineChart() {
           padding={{ left: 10 }}
           tickLine={false}
         />
-        {data.map((item, i) => (
+        {data.lineChartData.map((item, i) => (
           <ReferenceLine y={i * 2500} strokeWidth={1} stroke="#EAEAEA" />
         ))}
         <Line
