@@ -36,7 +36,7 @@ export const SideDrawer = () => {
   return (
     <section className="h-full  min-w-[280px] flex flex-col justify-between bg-black rounded-[30px] py-[60px] pl-[50px]">
       <div className="h-full w-full flex flex-col gap-[60px]">
-        <p className="text-[36px] leading-[44px] font-bold text-white">
+        <p className="text-[36px] leading-[44px] font-bold text-white font-montserrat">
           Board.
         </p>
 

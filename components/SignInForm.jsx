@@ -17,13 +17,13 @@ export const SignInForm = () => {
   ];
   return (
     <section className="w-[385px] flex flex-col items-center">
-      <p className="text-[36px] font-bold self-start leading-[44px]">Sign In</p>
+      <p className="text-[36px] font-bold self-start leading-[44px] font-montserrat">Sign In</p>
       <p className="text-[16px] self-start leading-[19px] mt-[5px]">
         Sign in to your account
       </p>
       <div className="flex w-full justify-between mt-[26px]">
         {/* TODO: Break in component */}
-        <button className="flex w-[180px] h-[30px] bg-white rounded-[10px] items-center gap-[10px] justify-center">
+        <button className="flex w-[180px] h-[30px] bg-white rounded-[10px] items-center gap-[10px] justify-center font-montserrat">
           <img
             src="https://res.cloudinary.com/dqzjevzuo/image/upload/v1685693166/ykzektfqmzw2wsusxesf.svg"
             className="h-[14px] w-[14px]"
@@ -33,7 +33,7 @@ export const SignInForm = () => {
             Sign in with Google
           </p>
         </button>
-        <button className="flex w-[180px] h-[30px] bg-white rounded-[10px] gap-[10px] items-center justify-center">
+        <button className="flex w-[180px] h-[30px] bg-white rounded-[10px] gap-[10px] items-center justify-center font-montserrat">
           <img
             src="https://res.cloudinary.com/dqzjevzuo/image/upload/v1685693164/i3zuq767odwknkdn9yew.svg"
             className="h-[14px] w-[14px]"
@@ -61,7 +61,7 @@ export const SignInForm = () => {
             Forgot Password?
           </p>
 
-          <button className="w-full bg-black rounded-[10px] flex items-center h-[40px] justify-center font-bold text-[16px] text-white">
+          <button className="w-full font-montserrat bg-black rounded-[10px] flex items-center h-[40px] justify-center font-bold text-[16px] text-white">
             Sign In
           </button>
         </div>

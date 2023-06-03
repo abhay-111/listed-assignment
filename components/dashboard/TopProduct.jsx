@@ -10,12 +10,19 @@ export const TopProduct = () => {
   return (
     <div className="flex flex-col bg-white rounded-[20px] min-w-[480px] w-full p-[30px_40px] gap-[23px]">
       <div className="w-full flex justify-between">
-        <p className="text-[18px] leading-[22px] font-bold ">Top Product</p>
-        <p className="text-[12px] leading-[16px] text-[#858585]">Top Product</p>
+        <p className="text-[18px] leading-[22px] font-bold font-montserrat ">Top Product</p>
+        <p className="text-[12px] leading-[16px] text-[#858585]">
+          May - June 2021
+          <img
+            className="w-[5px] h-[8px] inline ml-2 rotate-[90deg]"
+            src="https://res.cloudinary.com/dqzjevzuo/image/upload/v1685799677/pfcdidyynigmafxbjstl.svg"
+            alt=""
+          />
+        </p>
       </div>
       <div className="flex w-full gap-[43px]">
-        <div className='flex-1'>
-           {domLoaded &&  <CustomPieChart></CustomPieChart>}
+        <div className="flex-1">
+          {domLoaded && <CustomPieChart></CustomPieChart>}
         </div>
         <div className="flex flex-col  w-full  gap-[21px] justify-between">
           <div className="flex gap-[10px]">

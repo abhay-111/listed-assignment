@@ -21,7 +21,7 @@ export const Schedule = () => {
   return (
     <div className="flex flex-col bg-white rounded-[20px] min-w-[480px] w-full p-[30px_40px] gap-[23px]">
       <div className="w-full flex justify-between">
-        <p className="text-[18px] leading-[22px] font-bold ">
+        <p className="text-[18px] leading-[22px] font-bold font-montserrat ">
           Today’s schedule
         </p>
         <p className="text-[12px] leading-[16px] text-[#858585]">
