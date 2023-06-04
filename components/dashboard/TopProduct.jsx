@@ -24,7 +24,7 @@ export const TopProduct = () => {
         <div className="flex-1">
           {domLoaded && <CustomPieChart data={data.pieChartData} ></CustomPieChart>}
         </div>
-        <div className="flex flex-col  w-full  gap-[21px] justify-between">
+        <div className="flex flex-col flex-1  w-full  gap-[21px] justify-between">
           {
             data.pieChartData.map((item)=>{
               return (
