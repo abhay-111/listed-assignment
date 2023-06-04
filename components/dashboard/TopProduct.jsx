@@ -8,7 +8,7 @@ export const TopProduct = () => {
       setDomLoaded(true);
     }, []);
   return (
-    <div className="flex flex-col bg-white rounded-[20px] min-w-[480px] w-full p-[30px_40px] gap-[23px]">
+    <div className="flex flex-col bg-white rounded-[20px]  w-full p-[30px_40px] gap-[23px]">
       <div className="w-full flex justify-between">
         <p className="text-[18px] leading-[22px] font-bold font-montserrat ">Top Product</p>
         <p className="text-[12px] leading-[16px] text-[#858585] cursor-pointer">
