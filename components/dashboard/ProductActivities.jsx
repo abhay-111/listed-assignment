@@ -7,7 +7,7 @@ export const ProductActivities = () => {
       <div className="flex justify-between items-center">
         <div className="flex flex-col gap-[5px]">
           <p className="text-[18px] leading-[22px] font-bold font-montserrat">Activities</p>
-          <p className="text-[12px] leading-[16px] text-[#858585]">
+          <p className="text-[12px] leading-[16px] text-[#858585] cursor-pointer">
             May - June 2021
             <img
               className="w-[5px] h-[8px] inline ml-2 rotate-[90deg]"

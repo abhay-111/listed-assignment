@@ -10,7 +10,7 @@ export const Schedule = () => {
         <p className="text-[18px] leading-[22px] font-bold font-montserrat ">
           Today’s schedule
         </p>
-        <p className="text-[12px] leading-[16px] text-[#858585]">
+        <p className="text-[12px] leading-[16px] text-[#858585] cursor-pointer">
           See all
           <img
           className="w-[5px] h-[8px] inline ml-2"

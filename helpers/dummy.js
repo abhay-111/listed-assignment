@@ -6,10 +6,10 @@ export const data = {
       statName: "Total Revenues",
       statValue: "$2,129,430",
       bgColor: "#DDEFE0",
-      dimensions:{
-        height:24,
-        width:26,
-      } 
+      dimensions: {
+        height: 24,
+        width: 26,
+      },
     },
     {
       iconUrl:
@@ -18,9 +18,9 @@ export const data = {
       statValue: "1,520",
       bgColor: "#F4ECDD",
       dimensions: {
-        height:24,
-        width:20,
-      }
+        height: 24,
+        width: 20,
+      },
     },
     {
       iconUrl:
@@ -28,9 +28,9 @@ export const data = {
       statName: "Total Likes",
       statValue: "9,721",
       bgColor: "#EFDADA",
-      dimensions:{
-        width:24,
-        height:24
+      dimensions: {
+        width: 24,
+        height: 24,
       },
     },
     {
@@ -39,9 +39,9 @@ export const data = {
       statName: "Total Users",
       statValue: "892",
       bgColor: "#DEE0EF",
-      dimensions:{
-        height:24,
-        width:36
+      dimensions: {
+        height: 24,
+        width: 36,
       },
     },
   ],
@@ -131,19 +131,20 @@ export const data = {
   ],
   pieChartData: [
     {
-      name: "Group A",
-      value: 400,
+      name: "Basic Tees",
+      value: 55,
       fill: "#98D89E",
     },
     {
-      name: "Group B",
-      value: 300,
-      fill: "#EE8484",
-    },
-    {
-      name: "Group C",
-      value: 500,
+      name: "Custom Short Pants",
+      value: 14,
       fill: "#F6DC7D",
+    },
+    
+    {
+      name: "Super Hoodies",
+      value: 31,
+      fill: "#EE8484",
     },
   ],
 };

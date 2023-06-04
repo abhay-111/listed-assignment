@@ -2,7 +2,7 @@ import React from 'react'
 
 export const NavListItems = ({text,iconUrl,isActive}) => {
   return (
-    <li className="flex items-center gap-[20px] w-full">
+    <li className="flex items-center gap-[20px] w-full cursor-pointer">
       <img src={iconUrl} className="h-[18px] w-[18px]" alt="" />
       <p
         className={
