@@ -8,8 +8,8 @@ export const TopProduct = () => {
       setDomLoaded(true);
     }, []);
   return (
-    <div className="flex flex-col bg-white rounded-[20px]  w-full p-[30px_40px] gap-[23px]">
-      <div className="w-full flex justify-between">
+    <div className="flex flex-col bg-white rounded-[20px]  w-full md:p-[30px_40px] p-[24px] gap-[23px]">
+      <div className="w-full flex md:flex-row flex-col gap-2 justify-between">
         <p className="text-[18px] leading-[22px] font-bold font-montserrat ">Top Product</p>
         <p className="text-[12px] leading-[16px] text-[#858585] cursor-pointer">
           May - June 2021
@@ -20,7 +20,7 @@ export const TopProduct = () => {
           />
         </p>
       </div>
-      <div className="flex w-full gap-[43px]">
+      <div className="flex md:flex-row flex-col items-center  w-full gap-[43px]">
         <div className="flex-1">
           {domLoaded && <CustomPieChart data={data.pieChartData} ></CustomPieChart>}
         </div>
