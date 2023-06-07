@@ -4,7 +4,7 @@ import { data } from '../../helpers/dummy'
 export const ProductStatsInfo = () => {
     
   return (
-    <div className="w-full flex gap-[36px] min-h-[120px] overflow-x-scroll no-scrollbar">
+    <div className="w-full  mx-auto flex gap-[36px] min-h-[120px] overflow-x-scroll no-scrollbar">
       {data.userStats.map((stat) => {
         return (
           <StatisticsCard

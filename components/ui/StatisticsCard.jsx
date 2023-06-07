@@ -3,7 +3,7 @@ import React from 'react'
 export const StatisticsCard = ({bgColor,iconUrl,statName,statValue, dimensions}) => {
   return (
     <div
-      className={`h-[120px]  min-w-[221px] p-[20px_25px] rounded-[20px] flex flex-col`}
+      className={`h-[120px] min-w-full  md:min-w-[221px] p-[20px_25px] rounded-[20px] flex flex-col`}
       style={{backgroundColor:bgColor}}
     >
       <img

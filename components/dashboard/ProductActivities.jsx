@@ -3,8 +3,8 @@ import LineChart from '../ui/charts/CustomLineChart';
 
 export const ProductActivities = () => {
   return (
-    <section className="p-[30px_40px] w-full gap-[30px] bg-white rounded-[20px] flex flex-col">
-      <div className="flex justify-between items-center">
+    <section className="md:p-[30px_40px] p-[12px_24px]  w-full gap-[30px] bg-white rounded-[20px] flex flex-col">
+      <div className="flex md:flex-row flex-col  justify-between gap-3 md:items-center">
         <div className="flex flex-col gap-[5px]">
           <p className="text-[18px] leading-[22px] font-bold font-montserrat">Activities</p>
           <p className="text-[12px] leading-[16px] text-[#858585] cursor-pointer">

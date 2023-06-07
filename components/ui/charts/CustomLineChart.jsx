@@ -11,9 +11,14 @@ import {
 import { data } from "../../../helpers/dummy";
 export default function UserLineChart() {
   return (
-    <ResponsiveContainer width="100%" height={212}>
-      <LineChart width={1000} height={250} data={data.lineChartData}>
+    <ResponsiveContainer
+      className={"ml-[-25px] min-w-[300px] w-full"}
+      width="100%"
+      height={212}
+    >
+      <LineChart width="100%" height={250} data={data.lineChartData}>
         <XAxis
+          style={{ fontSize: "14px" }}
           interval={"preserveStartEnd"}
           axisLine={false}
           tickLine={false}
@@ -21,13 +26,14 @@ export default function UserLineChart() {
           dataKey="name"
         />
         <YAxis
+          style={{ fontSize: "14px" }}
           stroke="#858585"
           axisLine={false}
           padding={{ left: 10 }}
           tickLine={false}
         />
         {data.lineChartData.map((item, i) => (
-          <ReferenceLine y={i * 2500} strokeWidth={1} stroke="#EAEAEA" />
+          <ReferenceLine y={i * 200} strokeWidth={1} stroke="#EAEAEA" />
         ))}
         <Line
           type="monotone"
