@@ -23,6 +23,7 @@ export const Schedule = () => {
         {data.eventData.map((item, index) => {
           return (
             <EventItem
+            key={index}
               title={item.title}
               time={item.time}
               description={item.description}

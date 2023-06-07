@@ -33,7 +33,7 @@ export default function UserLineChart() {
           tickLine={false}
         />
         {data.lineChartData.map((item, i) => (
-          <ReferenceLine y={i * 200} strokeWidth={1} stroke="#EAEAEA" />
+          <ReferenceLine y={i * 200} key={i} strokeWidth={1} stroke="#EAEAEA" />
         ))}
         <Line
           type="monotone"

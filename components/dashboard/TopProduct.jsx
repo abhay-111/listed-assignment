@@ -26,9 +26,9 @@ export const TopProduct = () => {
         </div>
         <div className="flex flex-col flex-1  w-full  gap-[21px] justify-between">
           {
-            data.pieChartData.map((item)=>{
+            data.pieChartData.map((item,index)=>{
               return (
-                <div className="flex gap-[10px]">
+                <div key={index} className="flex gap-[10px]">
                   <div className="h-[11px] w-[11px] rounded-full" style={{ backgroundColor:item.fill}}></div>
                   <div className="flex flex-col gap-[5px]">
                     <p className="text-[14px] leading-[100%]  font-bold">

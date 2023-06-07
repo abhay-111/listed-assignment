@@ -10,9 +10,10 @@ export const SideDrawer = () => {
         </p>
 
         <ul className="flex flex-col gap-[40px]">
-          {data.navItems.map((item) => {
+          {data.navItems.map((item,index) => {
             return (
               <NavListItems
+                key={index}
                 text={item.text}
                 isActive={item.isActive}
                 iconUrl={item.iconUrl}

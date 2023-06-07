@@ -5,9 +5,10 @@ export const ProductStatsInfo = () => {
     
   return (
     <div className="w-full  mx-auto flex gap-[36px] min-h-[120px] overflow-x-scroll no-scrollbar">
-      {data.userStats.map((stat) => {
+      {data.userStats.map((stat,index) => {
         return (
           <StatisticsCard
+          key={index}
             statName={stat.statName}
             statValue={stat.statValue}
             bgColor={stat.bgColor}
