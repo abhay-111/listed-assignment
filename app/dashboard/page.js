@@ -1,35 +1,35 @@
 "use client";
-import { ProductActivities } from "@/components/dashboard/ProductActivities";
-import { ProductStat } from "@/components/dashboard/ProductStat";
-import { ProductStatsInfo } from "@/components/dashboard/ProductStatsInfo";
-import { TopNavigation } from "@/components/dashboard/TopNavigation";
-import { SideDrawer } from "@/components/dashboard/SideDrawer";
-import { MobileNav } from "@/components/dashboard/MobileNav";
+import { MainScreen } from "@/components/dashboard/Screens/MainScreen";
 import React, { useEffect, useState } from "react";
-
+import { MobileNav } from "@/components/dashboard/MobileNav";
+import dynamic from "next/dynamic";
+import { Map } from "@/components/dashboard/Screens/MapScreen";
+import { useSelector } from "react-redux";
 export default function Page() {
   const [domLoaded, setDomLoaded] = useState(false);
-  const [showNav, setShowNav] = useState(false)
+  const [showNav, setShowNav] = useState(false);
+  const [currentComponent, setCurrentComponent] = useState(null);
+  const screen = useSelector((store) => store.main.count);
+  console.log(screen)
+  const chooseCurrentComponent = () => {
+    if (screen == 1) {
+      setCurrentComponent(<Map></Map>);
+    } else {
+      setCurrentComponent(<MainScreen toggleNav={setShowNav}></MainScreen>);
+    }
+  };
   useEffect(() => {
     setDomLoaded(true);
-  }, []);
+    chooseCurrentComponent();
+  }, [screen]);
   return (
-    <div className="md:p-[40px] p-[16px] bg-[#F5F5F5] h-screen w-full flex gap-[40px] overflow-hidden">
-      <SideDrawer></SideDrawer>
-      <section className="h-full w-full md:p-[20px] flex flex-col gap-[40px] overflow-y-scroll no-scrollbar">
-        <>
-          {showNav && (
-            <MobileNav
-              showNav={showNav}
-              toggleNav={setShowNav}
-            ></MobileNav>
-          )}
-          <TopNavigation toggleNav={setShowNav}></TopNavigation>
-          <ProductStatsInfo></ProductStatsInfo>
-          <ProductActivities></ProductActivities>
-          <ProductStat></ProductStat>
-        </>
-      </section>
-    </div>
+    <section className="h-full w-full md:p-[20px] flex flex-col gap-[40px] overflow-y-scroll no-scrollbar">
+      <>
+        {showNav && (
+          <MobileNav showNav={showNav} toggleNav={setShowNav}></MobileNav>
+        )}
+        {currentComponent}
+      </>
+    </section>
   );
 }

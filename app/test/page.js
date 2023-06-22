@@ -1,6 +1,15 @@
 'use client'
+import { Map } from "@/components/dashboard/Screens/MapScreen";
 import React from "react";
-import { LineChart,CartesianGrid,XAxis,YAxis,Legend,Line,Tooltip } from "recharts";
+import dynamic from "next/dynamic";
+
+// const MapWithNoSSR = dynamic(
+//   () => import("@/components/dashboard/Screens/MapScreen"),
+//   {
+//     ssr: false,
+//   }
+// );
+
 export default function Page() {
     const data = [
   {
@@ -47,19 +56,7 @@ export default function Page() {
   }
 ]
   return (
-    <LineChart
-      width={730}
-      height={250}
-      data={data}
-      margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-    >
-      <CartesianGrid strokeDasharray="3 3" />
-      <XAxis tick={['0','100']} dataKey="name" />
-      <YAxis />
-      <Tooltip />
-      <Legend />
-      <Line type="monotone" dataKey="pv" stroke="#8884d8" />
-      <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-    </LineChart>
+    // <MapWithNoSSR></MapWithNoSSR>
+    <Map></Map>
   );
 }

@@ -1,5 +1,7 @@
+'use client'
 import Image from 'next/image'
 import { SignInForm } from '@/components/SignInForm';
+import { useSelector } from 'react-redux';
 export default function Home() {
   return (
     <main className="flex h-screen w-full">

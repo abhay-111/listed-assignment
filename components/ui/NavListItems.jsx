@@ -1,8 +1,10 @@
 import React from 'react'
-
-export const NavListItems = ({text,iconUrl,isActive}) => {
+import { add } from "@/app/store/reducers/mainSlice";
+import { useDispatch } from 'react-redux';
+export const NavListItems = ({text,iconUrl,isActive,index}) => {
+  const dispatch = useDispatch()
   return (
-    <li className="flex items-center gap-[20px] w-full cursor-pointer">
+    <li onClick={()=> dispatch(add(index))} className="flex items-center gap-[20px] w-full cursor-pointer">
       <img src={iconUrl} className="h-[18px] w-[18px]" alt="" />
       <p
         className={
