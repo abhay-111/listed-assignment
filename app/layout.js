@@ -12,12 +12,10 @@ export const metadata = {
 import { Providers } from "./store/Provider";
 export default function RootLayout({ children }) {
   return (
-        <Providers>
-    <html lang="en">
-      <body className={lato.className}>
-          {children}
-      </body>
-    </html>
-          </Providers>
+    <Providers>
+      <html lang="en">
+        <body className={lato.className}>{children}</body>
+      </html>
+    </Providers>
   );
 }

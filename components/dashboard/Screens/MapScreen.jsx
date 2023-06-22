@@ -13,7 +13,7 @@ export const Map = () => {
   return (
     <>
       <MapContainer
-        className="h-full w-full overflow-hidden z-50 rounded-xl"
+        className="h-full w-full overflow-hidden z-0 rounded-xl"
         center={[51.505, -0.09]}
         zoom={13}
         scrollWheelZoom={false}

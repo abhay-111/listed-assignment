@@ -1,6 +1,9 @@
 import { NavListItems } from "../ui/NavListItems";
 import { data } from "../../helpers/dummy";
+import { useDispatch } from "react-redux";
+import { toggleMobileNav } from "@/app/store/reducers/mainSlice";
 export const MobileNav = ({showNav , toggleNav}) => {
+  const dispatch = useDispatch()
     const mountedStyle = {
       animation: "inAnimation 250ms ease-in",
     };
@@ -10,8 +13,8 @@ export const MobileNav = ({showNav , toggleNav}) => {
     };
   return (
     <div
-      onClick={() => toggleNav(false)}
-      className="h-full z-[2] w-full fixed top-0 left-0 p-[12px]"
+      onClick={() => dispatch(toggleMobileNav())}
+      className="h-full z-[20] w-full fixed top-0 left-0 p-[12px]"
     >
       <section
         style={showNav ? mountedStyle : unmountedStyle}
@@ -19,10 +22,10 @@ export const MobileNav = ({showNav , toggleNav}) => {
       >
         <button
           className="absolute top-[24px] right-[24px] text-white"
-          onClick={() => toggleNav(false)}
+          onClick={() => dispatch(toggleMobileNav())}
         >
           <img
-          className="h-[24px] w-[24px]"
+            className="h-[24px] w-[24px]"
             src="https://res.cloudinary.com/qtalk/image/upload/v1678376094/super-bio/icons/X_lvjq8w.svg"
             alt=""
           />
@@ -33,10 +36,10 @@ export const MobileNav = ({showNav , toggleNav}) => {
           </p>
 
           <ul className="flex flex-col gap-[40px]">
-            {data.navItems.map((item,index) => {
+            {data.navItems.map((item, index) => {
               return (
                 <NavListItems
-                key={index}
+                  key={index}
                   text={item.text}
                   isActive={item.isActive}
                   iconUrl={item.iconUrl}
