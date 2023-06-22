@@ -16,7 +16,6 @@ export const SideDrawer = () => {
                 key={index}
                 index={index+1}
                 text={item.text}
-                isActive={item.isActive}
                 iconUrl={item.iconUrl}
               ></NavListItems>
             );
